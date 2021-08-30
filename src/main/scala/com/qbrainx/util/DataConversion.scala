@@ -4,8 +4,8 @@ import com.qbrainx.model.Implicits.dataFormat
 import spray.json.{JsArray, JsValue,enrichAny}
 
 object DataConversion {
-  protected[JsonFormatter] var arrayofJson: JsArray =JsArray.empty
-  protected[JsonFormatter] var values: Vector[JsValue] = Vector.empty
+  var arrayofJson: JsArray =JsArray.empty
+  var values: Vector[JsValue] = Vector.empty
   def dataConversion(s: String): Data = {
     s.split(",") match {
       case Array(str1, str2) =>
