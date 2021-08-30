@@ -4,7 +4,7 @@ import spray.json.JsArray
 
 import scala.annotation.tailrec
 
-object JsonFormatter extends App {
+object JsonFormatter extends App  {
   @tailrec
   def writeJson(b: Int): Unit = {
     val input = io.StdIn.readLine()
